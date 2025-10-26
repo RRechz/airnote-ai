@@ -37,5 +37,3 @@ AirNote uses a central class called GeminiRepository to manage artificial intell
 * **Asynchronous Programming**: All network calls and heavy operations are performed on Dispatchers.IO using Kotlin Coroutines.
 * **Streaming**: Chat and Assistant actions return Flow<String> to receive responses in chunks.
 * **Architecture**: The code follows a Repository pattern in accordance with clean architecture principles and uses @Inject (*Hilt/Dagger*) for dependencies.
-
-[![Downloads](https://img.shields.io/github/downloads/RRechz/AirNote/total)](https://github.com/RRechz/AirNote/releases/tag/v1.4)
