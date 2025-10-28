@@ -25,7 +25,7 @@
   * **Create Draft**: Create a complete note draft by simply providing a topic.
   * **Create Notes from Images**: Create text-based notes about an image by uploading an image (*Bitmap*) and a prompt.
 * Integrated Kai AI Chat  
-Fikirlerinizi ve notlarınızı tartışabileceğiniz, sohbet geçmişi hafızasına sahip tam özellikli bir yapay zeka sohbet arayüzü.
+A fully featured AI chat interface where you can discuss your ideas and notes, with a chat history memory.
   * **Mentioning Notes** (*@mention*): During a conversation, you can refer to your existing notes by typing ```@note-name``` to have Kai include the content of that note in the conversation.
   * **Desktop Support**: Provides a fully featured AI chat experience on large-screen devices and in desktop mode.
 * On-Device Translation (*ML Kit*)
