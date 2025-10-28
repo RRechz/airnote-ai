@@ -1,5 +1,5 @@
-## **AirNote Kai AI**: Gemini API and ML Kit-Powered Smart Note Assistant
-**Pre-information**: *AirNote Ai* is a modern, note-focused AI model that takes your note-taking experience to the next level with *Google*'s powerful AI models. Improve your text, generate new ideas, chat with your notes, and translate text on your device.
+## **AirNote Kai**: Gemini API and ```ML Kit-Powered``` Smart Note Assistant
+**Pre-information**: *AirNote Kai* is a modern, note-focused AI model that takes your note-taking experience to the next level with *Google*'s powerful AI models. Improve your text, generate new ideas, chat with your notes, and translate text on your device.
 
 ## ✨ Features
 * Artificial Intelligence-based Writing Assistant (*Text Editing*)
@@ -15,14 +15,19 @@
   * **Create a To-Do List**: Generates an actionable task list from a text.
   * **Simplify**: Makes complex texts easier to understand.
   * **Title Suggest**: Finds creative titles for your text.
-* AI Modes
+* Kai Agents (*AI Modes*) 
+*Kai Agents* are artificial intelligence personalities specialized in specific tasks.
   * **Note Assistant**: Generates more factual, accurate, and note-taking focused responses. (*Uses a low temperature value*).
   * **Creative Mind**: Generates more flexible and original responses for brainstorming and creative writing. (*Uses a high temperature value*).
+  * **Academic Researcher**: Creates structured, evidence-based, and formal academic texts for theses, articles, and research notes.
+  * **Professional Strategist**: Adopts a clear, goal-oriented, and professional communication tone for emails, reports, and business plans.
 * Creating New Content
   * **Create Draft**: Create a complete note draft by simply providing a topic.
   * **Create Notes from Images**: Create text-based notes about an image by uploading an image (*Bitmap*) and a prompt.
-* Integrated AI Chat  
-A fully featured AI chat interface where you can discuss your notes and ideas, with chat history recall. Responses are streamed using Flow for a better user experience.
+* Integrated Kai AI Chat  
+Fikirlerinizi ve notlarınızı tartışabileceğiniz, sohbet geçmişi hafızasına sahip tam özellikli bir yapay zeka sohbet arayüzü.
+  * **Mentioning Notes** (*@mention*): During a conversation, you can refer to your existing notes by typing ```@note-name``` to have Kai include the content of that note in the conversation.
+  * **Desktop Support**: Provides a fully featured AI chat experience on large-screen devices and in desktop mode.
 * On-Device Translation (*ML Kit*)
   * **Automatic Language Detection**: Automatically detects the language in which the text is written.
   * **On-Device Translation**: Translates text using the device's own processing power, without requiring an internet connection (*in most cases*) or incurring API costs.
@@ -30,10 +35,10 @@ A fully featured AI chat interface where you can discuss your notes and ideas, w
   * **Language Model Management**: Users can download, manage, and delete the language models they want for offline use.
 
 ## 🛠️ Technical Details
-AirNote uses a central class called GeminiRepository to manage artificial intelligence features.
-* **APIs**: Google Gemini API (*com.google.ai.client.generativeai*)
-* **On-Device AI**: Google ML Kit (*com.google.mlkit.nl.translate* & *languageid*)
-* **API Key**: The application requires users to enter their own Gemini API keys and validates this key before any transaction (*validateApiKey*).
-* **Asynchronous Programming**: All network calls and heavy operations are performed on Dispatchers.IO using Kotlin Coroutines.
-* **Streaming**: Chat and Assistant actions return Flow<String> to receive responses in chunks.
-* **Architecture**: The code follows a Repository pattern in accordance with clean architecture principles and uses @Inject (*Hilt/Dagger*) for dependencies.
+AirNote uses a central class called ```GeminiRepository.kt``` to manage artificial intelligence features.
+* **APIs**: Google Gemini API (```com.google.ai.client.generativeai```)
+* **On-Device AI**: Google ML Kit (```com.google.mlkit.nl.translate``` & ```languageid```)
+* **API Key**: The application requires users to enter their own Gemini API keys and validates this key before any transaction (```validateApiKey```).
+* **Asynchronous Programming**: All network calls and heavy operations are performed on ```Dispatchers.IO``` using Kotlin Coroutines.
+* **Streaming**: Chat and Assistant actions return ```Flow<String>``` to receive responses in chunks.
+* **Architecture**: The code follows a Repository pattern in accordance with clean architecture principles and uses ```@Inject (Hilt/Dagger)``` for dependencies.
