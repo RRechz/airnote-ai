@@ -1,4 +1,4 @@
-## **AirNote Kai**: Gemini API and ```ML Kit-Powered``` Smart Note Assistant
+## **AirNote Kai**: Gemini API and ```ML Kit```-Powered Smart Note Assistant
 **Pre-information**: *AirNote Kai* is a modern, note-focused AI model that takes your note-taking experience to the next level with *Google*'s powerful AI models. Improve your text, generate new ideas, chat with your notes, and translate text on your device.
 
 ## ✨ Features
